@@ -6,9 +6,40 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color: #333;
-  background: #fff;
+  font-family: 'Epilogue', sans-serif;
+  color: #4a5a51;
+  background: #f8faf9;
   line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Sacramento', cursive;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+.btn-primary,
+.btn-outline,
+.nav-btn {
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }

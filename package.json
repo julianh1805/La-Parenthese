@@ -8,6 +8,8 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fontsource/epilogue": "^5.2.8",
+    "@fontsource/sacramento": "^5.2.8",
     "core-js": "^3.8.3",
     "express": "^5.2.1",
     "express-rate-limit": "^8.3.2",

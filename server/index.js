@@ -6,8 +6,8 @@ const { isValidEmail, requireString } = require('./validate')
 
 const app = express()
 const PORT = process.env.PORT || 3000
-const MAIL_FROM = process.env.MAIL_FROM || 'contact@parenthese-reflexo.fr'
-const MAIL_TO = process.env.MAIL_TO || 'contact@parenthese-reflexo.fr'
+const MAIL_FROM = process.env.MAIL_FROM || 'laparentheseancenis@gmail.com'
+const MAIL_TO = process.env.MAIL_TO || 'laparentheseancenis@gmail.com'
 
 app.set('trust proxy', 1)
 app.use(express.json())
