@@ -139,4 +139,31 @@
   letter-spacing: 3.6px;
   color: #fff;
 }
+
+@media (max-width: 900px) {
+  .spheres {
+    padding: 72px 0;
+  }
+  .spheres-container {
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .spheres-header h2 {
+    font-size: 56px;
+    line-height: 1;
+  }
+  .spheres-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .sphere-card {
+    border-radius: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .spheres-header h2 {
+    font-size: 44px;
+  }
+}
 </style>

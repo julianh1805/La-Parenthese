@@ -118,4 +118,43 @@
   background: #94b0a1;
   color: #fff;
 }
+
+@media (max-width: 900px) {
+  .hero {
+    height: auto;
+    min-height: 520px;
+    padding: 80px 24px;
+    margin-top: 64px;
+  }
+  .hero h1,
+  .hero-h2 {
+    font-size: 52px;
+  }
+  .hero-tagline {
+    font-size: 26px;
+    line-height: 1.3;
+    padding-top: 24px;
+  }
+  .hero-subtitle {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+  .hero-buttons {
+    padding-top: 28px;
+  }
+  .btn-primary {
+    padding: 16px 28px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero h1,
+  .hero-h2 {
+    font-size: 40px;
+  }
+  .hero-tagline {
+    font-size: 22px;
+  }
+}
 </style>

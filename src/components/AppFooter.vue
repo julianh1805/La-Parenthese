@@ -103,4 +103,17 @@
   line-height: 15px;
   color: rgba(74, 90, 81, 0.6);
 }
+
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 20px;
+    text-align: center;
+  }
+  .footer-meta {
+    align-items: center;
+    text-align: center;
+  }
+}
 </style>

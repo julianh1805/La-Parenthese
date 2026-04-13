@@ -132,4 +132,38 @@
 .bullet {
   margin-right: 4px;
 }
+
+@media (max-width: 900px) {
+  .accompagnement {
+    padding: 80px 0;
+  }
+  .accompagnement h2 {
+    font-size: 52px;
+    line-height: 1;
+  }
+  .cures-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .cure-card {
+    padding: 28px 24px 28px 32px;
+  }
+  .specifique {
+    padding: 32px 24px;
+  }
+  .specifique h3 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .specifique-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .accompagnement h2 {
+    font-size: 42px;
+  }
+}
 </style>

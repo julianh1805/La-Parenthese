@@ -282,6 +282,32 @@ button:disabled {
   cursor: not-allowed;
 }
 
+@media (max-width: 900px) {
+  .contact {
+    padding: 80px 20px;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .contact-info h2 {
+    font-size: 64px;
+    line-height: 1;
+  }
+  .contact-form-wrapper {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-info h2 {
+    font-size: 48px;
+  }
+  .author-name {
+    font-size: 34px;
+  }
+}
+
 .form-success {
   display: flex;
   align-items: center;

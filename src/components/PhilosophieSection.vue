@@ -81,4 +81,31 @@
 .philosophie-text .bold {
   font-weight: 700;
 }
+
+@media (max-width: 900px) {
+  .philosophie-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .philosophie-image img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    margin: 0 auto;
+  }
+  .philosophie-card {
+    padding: 32px 24px;
+  }
+  .philosophie-card h2 {
+    font-size: 52px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .philosophie-card h2 {
+    font-size: 44px;
+  }
+}
 </style>

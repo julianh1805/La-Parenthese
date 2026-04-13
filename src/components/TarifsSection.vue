@@ -159,4 +159,35 @@
 .tarif-btn:hover {
   opacity: 0.9;
 }
+
+@media (max-width: 900px) {
+  .tarifs-container {
+    gap: 48px;
+    padding: 0 20px;
+  }
+  .tarifs-header h2 {
+    font-size: 56px;
+    line-height: 1;
+  }
+  .tarifs-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .tarif-card {
+    min-height: auto;
+    padding: 36px 28px;
+  }
+  .tarif-card.featured {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .tarifs-header h2 {
+    font-size: 44px;
+  }
+  .tarif-price {
+    font-size: 40px;
+  }
+}
 </style>
