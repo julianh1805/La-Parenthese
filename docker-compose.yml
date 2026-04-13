@@ -1,29 +1,24 @@
 services:
   app:
     build: .
+    container_name: la-parenthese
     env_file: .env
-    expose:
-      - "3000"
     restart: unless-stopped
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=web"
+      - "traefik.http.routers.parenthese.rule=Host(`parenthese-reflexo.fr`) || Host(`www.parenthese-reflexo.fr`)"
+      - "traefik.http.routers.parenthese.entrypoints=websecure"
+      - "traefik.http.routers.parenthese.tls=true"
+      - "traefik.http.routers.parenthese.tls.certresolver=resolverhttp"
+      - "traefik.http.services.parenthese.loadbalancer.server.port=3000"
+      - "traefik.http.middlewares.parenthese-wwwredirect.redirectregex.regex=^https://www\\.parenthese-reflexo\\.fr/(.*)"
+      - "traefik.http.middlewares.parenthese-wwwredirect.redirectregex.replacement=https://parenthese-reflexo.fr/$${1}"
+      - "traefik.http.middlewares.parenthese-wwwredirect.redirectregex.permanent=true"
+      - "traefik.http.routers.parenthese.middlewares=parenthese-wwwredirect"
 
-  nginx:
-    build:
-      context: .
-      dockerfile: nginx/Dockerfile
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - /etc/letsencrypt:/etc/letsencrypt:ro
-      - ./nginx/certbot-webroot:/var/www/certbot:ro
-    depends_on:
-      - app
-    restart: unless-stopped
-
-  certbot:
-    image: certbot/certbot
-    volumes:
-      - /etc/letsencrypt:/etc/letsencrypt
-      - ./nginx/certbot-webroot:/var/www/certbot
-    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do sleep 12h & wait $${!}; certbot renew --webroot -w /var/www/certbot; done'"
-    restart: unless-stopped
+networks:
+  web:
+    external: true
