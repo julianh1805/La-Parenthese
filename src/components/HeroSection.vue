@@ -121,40 +121,45 @@
 
 @media (max-width: 900px) {
   .hero {
-    height: auto;
-    min-height: 520px;
-    padding: 80px 24px;
-    margin-top: 64px;
+    height: calc(100vh - 68px);
+    min-height: 560px;
+    padding: 0 24px;
+    margin-top: 68px;
   }
   .hero h1,
   .hero-h2 {
-    font-size: 52px;
+    font-size: 68px;
   }
   .hero-tagline {
-    font-size: 26px;
+    font-size: 32px;
     line-height: 1.3;
-    padding-top: 24px;
+    padding-top: 32px;
   }
   .hero-subtitle {
-    font-size: 11px;
-    letter-spacing: 3px;
+    font-size: 12px;
+    letter-spacing: 3.2px;
   }
   .hero-buttons {
-    padding-top: 28px;
+    padding-top: 36px;
   }
   .btn-primary {
-    padding: 16px 28px;
-    font-size: 11px;
+    padding: 18px 32px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 640px) {
+  .hero {
+    height: calc(100vh - 68px);
+    min-height: 560px;
+    padding: 0 20px;
+  }
   .hero h1,
   .hero-h2 {
-    font-size: 40px;
+    font-size: 56px;
   }
   .hero-tagline {
-    font-size: 22px;
+    font-size: 28px;
   }
 }
 </style>

@@ -5,11 +5,14 @@
         <img src="/images/logo.png" alt="La Parenthèse" />
       </a>
       <div class="nav-links">
-        <a href="#accueil" class="nav-link active" @click="close">ACCUEIL</a>
-        <a href="#philosophie" class="nav-link" @click="close">PHILOSOPHIE</a>
-        <a href="#accompagnement" class="nav-link" @click="close">ACCOMPAGNEMENT</a>
-        <a href="#tarifs" class="nav-link" @click="close">TARIFS</a>
-        <a href="#contact" class="nav-link" @click="close">CONTACT</a>
+        <a
+          v-for="link in links"
+          :key="link.id"
+          :href="`#${link.id}`"
+          class="nav-link"
+          :class="{ active: active === link.id }"
+          @click="close"
+        >{{ link.label }}</a>
         <a href="#contact" class="nav-btn nav-btn--mobile" @click="close">PRENDRE RDV</a>
       </div>
       <a href="#contact" class="nav-btn nav-btn--desktop" @click="close">PRENDRE RDV</a>
@@ -29,10 +32,35 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
+const links = [
+  { id: 'accueil', label: 'ACCUEIL' },
+  { id: 'philosophie', label: 'PHILOSOPHIE' },
+  { id: 'accompagnement', label: 'ACCOMPAGNEMENT' },
+  { id: 'tarifs', label: 'TARIFS' },
+  { id: 'contact', label: 'CONTACT' },
+]
+const active = ref('accueil')
 const open = ref(false)
 const close = () => { open.value = false }
+
+let observer = null
+onMounted(() => {
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) active.value = e.target.id
+      })
+    },
+    { rootMargin: '-40% 0px -55% 0px' }
+  )
+  links.forEach((l) => {
+    const el = document.getElementById(l.id)
+    if (el) observer.observe(el)
+  })
+})
+onUnmounted(() => observer?.disconnect())
 </script>
 
 <style scoped>
