@@ -129,8 +129,8 @@ async function submit() {
 }
 
 .contact-info h2 {
-  font-size: 96px;
-  line-height: 96px;
+  font-size: 160px;
+  line-height: 1;
   color: #94b0a1;
   letter-spacing: -0.15px;
 }
@@ -159,7 +159,7 @@ async function submit() {
 }
 
 .info-text h4 {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -188,8 +188,9 @@ async function submit() {
 }
 
 .author-name {
-  font-family: 'Sacramento', cursive;
-  font-size: 42px;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-weight: 700;
+  font-size: 56px;
   line-height: 1;
   color: #94b0a1;
 }
@@ -214,7 +215,7 @@ async function submit() {
 }
 
 .field label {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   color: #4a5a51;
@@ -223,7 +224,7 @@ async function submit() {
 
 .field input,
 .field textarea {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #4a5a51;
@@ -258,7 +259,7 @@ async function submit() {
 }
 
 button {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.2px;
@@ -291,7 +292,7 @@ button:disabled {
     gap: 48px;
   }
   .contact-info h2 {
-    font-size: 64px;
+    font-size: 150px;
     line-height: 1;
   }
   .contact-form-wrapper {
@@ -301,7 +302,7 @@ button:disabled {
 
 @media (max-width: 640px) {
   .contact-info h2 {
-    font-size: 48px;
+    font-size: 116px;
   }
   .author-name {
     font-size: 34px;

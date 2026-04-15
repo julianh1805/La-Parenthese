@@ -2,13 +2,16 @@
   <section id="accueil" class="hero" :style="{ backgroundImage: `url(${require('@/assets/images/hero-bg.jpg')})` }">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <div class="hero-subtitle">L'ART DU SOUFFLE &amp; DE LA DÉTENTE</div>
-      <h1>La Parenthèse -</h1>
-      <h2 class="hero-h2">Réflexologie Combinée</h2>
-      <p class="hero-tagline">Une invitation à rééquilibrer votre corps et apaiser votre esprit.</p>
-      <div class="hero-buttons">
-        <a href="#accompagnement" class="btn-primary">MON ACCOMPAGNEMENT</a>
+      <div class="hero-text">
+        <div class="hero-subtitle">L'ART DU SOUFFLE &amp; DE LA DÉTENTE</div>
+        <h1>La Parenthèse</h1>
+        <h2 class="hero-h2">RÉFLEXOLOGIE COMBINÉE</h2>
+        <p class="hero-tagline">Une invitation à rééquilibrer votre corps et apaiser votre esprit.</p>
+        <div class="hero-buttons">
+          <a href="#accompagnement" class="btn-primary">MON ACCOMPAGNEMENT</a>
+        </div>
       </div>
+      <div class="hero-logo" aria-hidden="true"></div>
     </div>
   </section>
 </template>
@@ -38,22 +41,52 @@
   max-width: 1216px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.hero-text {
+  display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1;
+}
+
+.hero-logo {
+  flex-shrink: 0;
+  width: 440px;
+  height: 440px;
+  align-self: flex-start;
+  margin-top: -40px;
+  background-color: #3d4f45;
+  -webkit-mask-image: url('~@/assets/images/logo.svg');
+  mask-image: url('~@/assets/images/logo.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
 }
 
 .hero-subtitle {
-  font-family: 'Epilogue', sans-serif;
+  align-self: flex-start;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 4.8px;
   text-transform: uppercase;
-  color: #94b0a1;
+  color: #fff;
+  background: rgba(61, 79, 69, 0.7);
+  padding: 6px 14px;
+  border-radius: 9999px;
   line-height: 16px;
 }
 
 .hero h1 {
-  font-size: 72px;
+  font-size: 180px;
   line-height: 1;
   color: #3d4f45;
   letter-spacing: -0.15px;
@@ -61,6 +94,8 @@
 }
 
 .hero-h2 {
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
   font-size: 72px;
   line-height: 1;
   color: #3d4f45;
@@ -68,9 +103,10 @@
 }
 
 .hero-tagline {
-  font-family: 'Sacramento', cursive;
-  font-size: 36px;
-  line-height: 58.5px;
+  font-family: 'Sen', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
   color: #3d4f45;
   letter-spacing: -0.15px;
   opacity: 0.95;
@@ -84,7 +120,7 @@
 }
 
 .btn-primary {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.2px;
@@ -102,7 +138,7 @@
 }
 
 .btn-outline {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.2px;
@@ -120,19 +156,24 @@
 }
 
 @media (max-width: 900px) {
+  .hero-logo {
+    display: none;
+  }
   .hero {
     height: calc(100vh - 68px);
     min-height: 560px;
     padding: 0 24px;
     margin-top: 68px;
   }
-  .hero h1,
+  .hero h1 {
+    font-size: 180px;
+  }
   .hero-h2 {
-    font-size: 68px;
+    font-size: 56px;
   }
   .hero-tagline {
-    font-size: 32px;
-    line-height: 1.3;
+    font-size: 18px;
+    line-height: 1.5;
     padding-top: 32px;
   }
   .hero-subtitle {
@@ -154,12 +195,14 @@
     min-height: 560px;
     padding: 0 20px;
   }
-  .hero h1,
+  .hero h1 {
+    font-size: 150px;
+  }
   .hero-h2 {
-    font-size: 56px;
+    font-size: 44px;
   }
   .hero-tagline {
-    font-size: 28px;
+    font-size: 16px;
   }
 }
 </style>

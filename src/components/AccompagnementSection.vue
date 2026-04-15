@@ -54,8 +54,8 @@
 }
 
 .accompagnement h2 {
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 130px;
+  line-height: 1;
   color: #94b0a1;
   text-align: center;
   letter-spacing: -0.15px;
@@ -102,9 +102,9 @@
 }
 
 .specifique h3 {
-  font-family: 'Sacramento', cursive;
-  font-size: 48px;
-  line-height: 48px;
+  font-family: 'Flatlion', cursive;
+  font-size: 86px;
+  line-height: 1;
   color: #94b0a1;
   text-align: center;
   letter-spacing: -0.15px;
@@ -138,7 +138,7 @@
     padding: 80px 0;
   }
   .accompagnement h2 {
-    font-size: 52px;
+    font-size: 125px;
     line-height: 1;
   }
   .cures-grid {
@@ -152,7 +152,7 @@
     padding: 32px 24px;
   }
   .specifique h3 {
-    font-size: 40px;
+    font-size: 96px;
     line-height: 1;
   }
   .specifique-grid {
@@ -163,7 +163,7 @@
 
 @media (max-width: 640px) {
   .accompagnement h2 {
-    font-size: 42px;
+    font-size: 108px;
   }
 }
 </style>

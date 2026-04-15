@@ -100,7 +100,7 @@ onUnmounted(() => observer?.disconnect())
 }
 
 .nav-link {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.2px;
@@ -116,7 +116,7 @@ onUnmounted(() => observer?.disconnect())
 }
 
 .nav-btn {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.6px;

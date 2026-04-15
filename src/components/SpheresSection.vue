@@ -73,7 +73,7 @@
 }
 
 .spheres-label {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 3.6px;
@@ -83,14 +83,14 @@
 }
 
 .spheres-header h2 {
-  font-size: 96px;
-  line-height: 96px;
+  font-size: 160px;
+  line-height: 1;
   color: #fff;
   letter-spacing: -0.15px;
 }
 
 .spheres-sub {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-style: italic;
   font-size: 16px;
   line-height: 24px;
@@ -133,7 +133,7 @@
 }
 
 .sphere-overlay span {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 3.6px;
@@ -149,7 +149,7 @@
     padding: 0 20px;
   }
   .spheres-header h2 {
-    font-size: 56px;
+    font-size: 140px;
     line-height: 1;
   }
   .spheres-grid {
@@ -163,7 +163,7 @@
 
 @media (max-width: 640px) {
   .spheres-header h2 {
-    font-size: 44px;
+    font-size: 112px;
   }
 }
 </style>

@@ -49,8 +49,8 @@
 }
 
 .philosophie-card h2 {
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 130px;
+  line-height: 1;
   color: #94b0a1;
   letter-spacing: -0.15px;
   margin-bottom: 32px;
@@ -98,14 +98,14 @@
     padding: 32px 24px;
   }
   .philosophie-card h2 {
-    font-size: 52px;
+    font-size: 125px;
     line-height: 1;
   }
 }
 
 @media (max-width: 640px) {
   .philosophie-card h2 {
-    font-size: 44px;
+    font-size: 108px;
   }
 }
 </style>

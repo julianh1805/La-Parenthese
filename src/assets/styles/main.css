@@ -1,3 +1,32 @@
+@font-face {
+  font-family: 'Flatlion';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~@/assets/fonts/flatlion.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('~@/assets/fonts/sen.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Qwitcher Grypen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~@/assets/fonts/qwitcher-grypen-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Qwitcher Grypen';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~@/assets/fonts/qwitcher-grypen-700.woff2') format('woff2');
+}
+
 *,
 *::before,
 *::after {
@@ -11,14 +40,14 @@ html {
 }
 
 body {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   color: #4a5a51;
   background: #f8faf9;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Flatlion', cursive;
   font-weight: 400;
 }
 

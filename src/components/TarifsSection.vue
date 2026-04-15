@@ -8,20 +8,20 @@
       <div class="tarifs-grid">
         <div class="tarif-card">
           <h3>Séance Découverte</h3>
-          <p class="tarif-duration">1 séance de 45 min</p>
-          <div class="tarif-price">35&euro;</div>
+          <p class="tarif-duration">1 séance de 30 min</p>
+          <div class="tarif-price">30&euro;</div>
         </div>
         <div class="tarif-card featured">
-          <div class="tarif-badge">La plus recommandée</div>
+          <div class="tarif-badge">Séance sur mesure</div>
           <h3>Séance Personnalisée</h3>
-          <p class="tarif-duration">1 séance de 1h à 1h30</p>
-          <div class="tarif-price">60&euro;</div>
+          <p class="tarif-duration">1 séance de 1h</p>
+          <div class="tarif-price">45&euro;</div>
           <a href="#contact" class="tarif-btn">PRENDRE RDV</a>
         </div>
         <div class="tarif-card">
           <h3>Cure</h3>
-          <p class="tarif-duration">5 séances de 1h à 1h30</p>
-          <div class="tarif-price">275&euro;</div>
+          <p class="tarif-duration">3 séances de 1h sur 3 semaines</p>
+          <div class="tarif-price">125&euro;</div>
         </div>
       </div>
     </div>
@@ -51,7 +51,7 @@
 }
 
 .tarifs-label {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 3.6px;
@@ -61,8 +61,8 @@
 }
 
 .tarifs-header h2 {
-  font-size: 96px;
-  line-height: 96px;
+  font-size: 160px;
+  line-height: 1;
   color: #94b0a1;
   letter-spacing: -0.15px;
 }
@@ -101,7 +101,7 @@
   top: -15px;
   background: #3d4f45;
   color: #fff;
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-size: 12px;
   letter-spacing: 0.5px;
   padding: 4px 24px;
@@ -109,9 +109,9 @@
 }
 
 .tarif-card h3 {
-  font-family: 'Sacramento', cursive;
-  font-size: 48px;
-  line-height: 48px;
+  font-family: 'Flatlion', cursive;
+  font-size: 86px;
+  line-height: 1;
   color: #94b0a1;
   letter-spacing: -0.15px;
 }
@@ -127,7 +127,7 @@
 }
 
 .tarif-price {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1;
@@ -140,7 +140,7 @@
 }
 
 .tarif-btn {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Sen', sans-serif;
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 1.2px;
@@ -166,7 +166,7 @@
     padding: 0 20px;
   }
   .tarifs-header h2 {
-    font-size: 56px;
+    font-size: 140px;
     line-height: 1;
   }
   .tarifs-grid {
@@ -184,7 +184,7 @@
 
 @media (max-width: 640px) {
   .tarifs-header h2 {
-    font-size: 44px;
+    font-size: 112px;
   }
   .tarif-price {
     font-size: 40px;
